@@ -61,4 +61,22 @@ package stats
 // 	fmt.Println(TotalInCategory(payment,"cafe"))
 // 	//Output: 0
 	
+
+// }
+
+// func ExampleCategoriesAvg() {
+// 	payments := []types.Payment{
+// 		{ID: 1, Category: "auto", Amount: 1_000_00},
+// 		{ID: 2, Category: "food", Amount: 2_000_00},
+// 		{ID: 3, Category: "auto", Amount: 3_000_00},
+// 		{ID: 4, Category: "auto", Amount: 4_000_00},
+// 		{ID: 5, Category: "fun", Amount: 5_000_00},
+		
+// 	}
+	
+// 	result := CategoriesAvg(payments)
+
+// 	fmt.Println(result)
+// 	//Output: 0
+
 // }
