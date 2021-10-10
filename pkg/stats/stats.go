@@ -1,27 +1,36 @@
 package stats
 
 import (
-	"github.com/dima-5050/bank/pkg/types"
+	"github.com/dima-5050/bank/v2/pkg/types"
 )
 
-func Avg(payments []types.Payment) types.Money  {
-	var avg types.Money=0
-	count:=0
+func Avg(payments []types.Payment) types.Money {
+	var avg types.Money = 0
+	count := 0
+
 	for _, payment := range payments {
-		avg+=payment.Amount
+		if payment.Status==types.StatusFail {
+			continue
+		}
+		avg += payment.Amount
 		count++
 	}
-	return avg/types.Money(count)
+	return avg / types.Money(count)
 }
 
-func TotalInCategory(payments []types.Payment, category types.Category) types.Money  {
+func TotalInCategory(payments []types.Payment, category types.Category) types.Money {
 	var total types.Money = 0
 
 	for _, payment := range payments {
-		if !(payment.Category== category) {
+		if !(payment.Category == category) {
 			continue
 		}
-		total+=payment.Amount
+
+		if payment.Status==types.StatusFail {
+			continue
+		}
+
+		total += payment.Amount
 	}
 	return total
 }
