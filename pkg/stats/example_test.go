@@ -2,7 +2,7 @@ package stats
 
 import (
 	"fmt"
-	"github.com/dima-5050/bank/pkg/bank/types"
+	"github.com/dima-5050/bank/pkg/types"
 )
 
 func ExampleAvg() {

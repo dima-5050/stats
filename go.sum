@@ -4,3 +4,7 @@ github.com/dima-5050/bank v0.0.0-20211010090006-316f9a75daec h1:taIioA6pLaool6sW
 github.com/dima-5050/bank v0.0.0-20211010090006-316f9a75daec/go.mod h1:kUBfZxu6ZUOKj7HTTDLcS8XmlQdqpow/J426BA3gn3Q=
 github.com/dima-5050/bank v0.0.0-20211010091911-945e41adf25b h1:ZYXuX6OqzqxHpzVq3iLvBxOYpwMfv/xZpBdfwp3YeAg=
 github.com/dima-5050/bank v0.0.0-20211010091911-945e41adf25b/go.mod h1:kUBfZxu6ZUOKj7HTTDLcS8XmlQdqpow/J426BA3gn3Q=
+github.com/dima-5050/bank v0.0.0-20211010093543-60b60a6caa43 h1:cEMJ8RCZWBq1v5UF2fJmkpi1+Mw9UINU50idlZe5EjM=
+github.com/dima-5050/bank v0.0.0-20211010093543-60b60a6caa43/go.mod h1:kUBfZxu6ZUOKj7HTTDLcS8XmlQdqpow/J426BA3gn3Q=
+github.com/dima-5050/bank v0.0.0-20211010094823-8cd134f16750 h1:DOJk9JYBcTgwLhL0PRwRO/ObUZSSYUGclA1zsM4rOd8=
+github.com/dima-5050/bank v0.0.0-20211010094823-8cd134f16750/go.mod h1:kUBfZxu6ZUOKj7HTTDLcS8XmlQdqpow/J426BA3gn3Q=
