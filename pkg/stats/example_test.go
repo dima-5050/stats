@@ -2,7 +2,7 @@ package stats
 
 import (
 	"fmt"
-	"github.com/dima-5050/bank/pkg/types"
+	"github.com/dima-5050/bank/v2/pkg/types"
 )
 
 func ExampleAvg() {
@@ -12,21 +12,24 @@ func ExampleAvg() {
 			ID: 1,
 			Amount: 1_000_00,
 			Category: "Auto",
+			Status: "INPROGRESS",
 		},
 		{
 			ID: 2,
 			Amount: 2_000_00,
 			Category: "Restaurant",
+			Status: "OK",
 		},
 		{
 			ID: 3,
 			Amount: 3_000_00,
 			Category: "cafe",
+			Status: "FAIL",
 		},
 	}
 
 	fmt.Println(Avg(payment))
-	//Output: 200000
+	//Output: 150000
 	
 }
 
@@ -38,20 +41,24 @@ func ExampleTotalInCategory() {
 			ID: 1,
 			Amount: 1_000_00,
 			Category: "Auto",
+			Status: "FAIL",
 		},
 		{
 			ID: 2,
 			Amount: 2_000_00,
 			Category: "Restaurant",
+			Status: "OK",
 		},
 		{
 			ID: 3,
 			Amount: 3_000_00,
 			Category: "cafe",
+			Status: "FAIL",
+
 		},
 	}
 
 	fmt.Println(TotalInCategory(payment,"cafe"))
-	//Output: 300000
+	//Output: 0
 	
 }
