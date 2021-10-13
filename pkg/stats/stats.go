@@ -1,6 +1,7 @@
 package stats
 
 import (
+	"fmt"
 	"github.com/dima-5050/bank/v2/pkg/types"
 )
 
@@ -89,12 +90,15 @@ func PeriodsDynamic(
 	//  count := 0
 	 result := map[types.Category]types.Money{}
 
-	for keyFirst, valFirst := range first {
-		for keySecond, valSecond := range second {
-			if keyFirst==keySecond {
-				result[keySecond]= valSecond-valFirst
-			}
-		}
+	 
+	for keySecond, valSecond := range second {
+		result[keySecond]=valSecond
+
 	}
+
+	for k, v := range first {
+		result[k]-=v
+	}
+	fmt.Println(result)
 	return result
 }
