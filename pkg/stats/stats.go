@@ -1,7 +1,7 @@
 package stats
 
 import (
-	"fmt"
+
 	"github.com/dima-5050/bank/v2/pkg/types"
 )
 
@@ -99,6 +99,5 @@ func PeriodsDynamic(
 	for k, v := range first {
 		result[k]-=v
 	}
-	fmt.Println(result)
 	return result
 }
