@@ -1,7 +1,6 @@
 package stats
 
 import (
-
 	"reflect"
 	"testing"
 	"github.com/dima-5050/bank/v2/pkg/types"
@@ -81,8 +80,8 @@ func TestCategoriesAvg(t *testing.T) {
 
 func TestPeriodsDynamic(t *testing.T) {
 	first := map[types.Category]types.Money{
-			"auto": 10,
-			"food": 20,
+			"auto": 1000000,
+			"food": 0,
 	}
 
 	second := map[types.Category]types.Money{
@@ -90,7 +89,6 @@ func TestPeriodsDynamic(t *testing.T) {
 		"food": 10,
 }
 	result := PeriodsDynamic(first, second)
-	
 	
 	if len(result) == 0 {
 		t.Error("result len !=0")

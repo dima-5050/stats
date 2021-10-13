@@ -1,7 +1,7 @@
 package stats
 
 import (
-		"github.com/dima-5050/bank/v2/pkg/types"
+	"github.com/dima-5050/bank/v2/pkg/types"
 )
 
 func Avg(payments []types.Payment) types.Money {
