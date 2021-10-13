@@ -25,13 +25,15 @@ func TestCategoriesAvg(t *testing.T) {
 
 func TestPeriodsDynamic(t *testing.T) {
 	first := map[types.Category]types.Money{
-			"auto": 10,
+			"auto": 100,
 			"food": 20,
+			"note":100,
 	}
 
 	second := map[types.Category]types.Money{
-		"auto": 20,
+		"auto": 50,
 		"food": 10,
+		"mobile":333,
 }
 	result := PeriodsDynamic(first, second)
 	
